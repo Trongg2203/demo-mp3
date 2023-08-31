@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assit/mp3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kablammo&family=Open+Sans:ital,wght@1,600&family=Roboto:ital,wght@0,400;1,300&family=Tilt+Prism&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <div class="music">
+        <div class="music-thumb">
+            <img src="https://images.unsplash.com/photo-1546614409-810f10108b74?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1933&q=80" alt="">
+        </div>
+        <h3 class="music-name">This's my song</h3>
+        <input type="range" name="range" id="range" class="range">
+        <audio src="/music/SonTung.mp3.mp3" id="song"></audio>
+        <div class="timer">
+            <div class="duration">2:10</div>
+            <div class="remaining">-3:10</div>
+        </div>
+        <div class="control">
+            <div class="play-back">
+                <span  class="material-symbols-outlined ">
+                    skip_previous
+                </span>
+            </div>
+            <div class="play">
+                <div class="player-inner">
+                    <span id="play-icon" class="material-symbols-outlined">
+                        play_circle
+                    </span>
+                </div>
+            </div>
+            <div class="play-next">
+                <span  class="material-symbols-outlined ">
+                    skip_next
+                </span>
+            </div>
+        </div>
+    </div>
+    <script src="assit/mp3.js"></script>
+</body>
+</html>
